@@ -1,0 +1,9 @@
+Time : {CURRENT DAE TIME}
+USER DETAILS: { THE LINE SHOW CURRENT USER in FILE /etc/passwd}
+REPO: {FULL PATH OF CURRENT REPO }
+GithubUrl: {print your private GITHUB URL}
+VERSIONID: {Extract VERSIONID value only from file /etc/os-release like we did in classroom}
+-------------------------------------------
+{ Install linux tree package and PRINT ALL FILES AND FOLDER IN RECURSIVE MODE of the repository Folder}
+--------------------------------------------
+List of all my .sh files under user folder recursively
