@@ -1,0 +1,43 @@
+    1  cd ..
+    2  cd .
+    3  cd saar
+    4  cd /home/saar
+    5  mkdir -p LINUX_Course_Project/{DOWNLOADS,CODE,DATA,BACKUPS,Work/{Q1,Q2,Q3,Q4}}
+    6  git config --global user.email
+    7  git config --global user.name
+    8  cd LINUX_Course_Project
+    9  git init
+   10  curl -L -o downloads.tar.gz https://github.com/Telhai/Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz
+   11  tar -xvzf <download.tar.gz> -C DOWNLOADS
+   12  tar -xvzf download.tar.gz -C DOWNLOADS
+   13* 
+   14  tar -xvzf download.tar.gz -C DOWNLOADS
+   15  tar -xvzf downloads.tar.gz -C DOWNLOADS
+   16  add .
+   17  git add .
+   18  git status
+   19  ls -la
+   20  git commit -m "init local repo"
+   21  rm downloads.tar.gz
+   22  git checkout -b BR_Q1
+   23  cp -R DOWNLOAD/* CODE/
+   24  cp -R DOWNLOADS/* CODE/
+   25  cp -R *.txt *.jpg *.csv DATA/
+   26  cp DOWNLOADS/*.{txt,jpg,csv} DATA/
+   27  cp DOWNLOADS/LINUX_COURSE_WORK-downloads/*.{txt,jpg,csv} DATA/
+   28  branch
+   29  git branch
+   30  cd Work
+   31  cd Q1
+   32  touch q1_output.txt
+   33  git add .
+   34  git status
+   35  git commit -m "br_q1 first commit"
+   36  git checkout main
+   37  git checkout master
+   38  git merge BR_Q1
+   39  cd ...
+   40  cd ..
+   41  git log | tee git_commits.log
+   42  cd /home/saar/LINUX_Course_Project/Work/Q1
+   43  history > historylinux.txt
