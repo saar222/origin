@@ -1,3 +1,9 @@
+commit 45a736b9933e0f82247fd776ac3a96bf54e48583
+Author: saar <saarwai@gmail.com>
+Date:   Wed Mar 5 02:57:29 2025 +0200
+
+    add history and git_commit part2
+
 commit ba30b37449e1117cc120df2c09b4a8b6fea961e1
 Merge: ad05073 ec8082a
 Author: saar <saarwai@gmail.com>

@@ -1,0 +1,56 @@
+    1  cd LINUX_Course_Project
+    2  pipreqs .
+    3  pip uninstall -y -r requirements.txt 
+    4  sudo pip uninstall -y -r requirements.txt 
+    5  python3 -m venv myenv
+    6  source myenv/bin/activate
+    7  pip uninstall -y -r requirements.txt
+    8  pip install -r requirements.txt
+    9  deactivate
+   10  python3 plant_plots.py --plant "flower" --height 50 55 60 70 80 --leaf_count 30 40 50 60 70 --dry_weight 3.0 3.2 3.5 3.7 4.0
+   11  cd Work
+   12  cd 
+   13  cd /home/saar/LINUX_Course_Project/Work
+   14  cd Q2
+   15  python3 plant_plots.py --plant "flower" --height 50 55 60 70 80 --leaf_count 30 40 50 60 70 --dry_weight 3.0 3.2 3.5 3.7 4.0
+   16  mkdir Diagrams_2
+   17  mv flower* Diagrams_2/
+   18  cd ..
+   19  tar -czvf BACKUPS/diagrams_2_$(date +"%Y%m%d_%H%M%S").tar.gz Work/Q2/Diagrams_2/*
+   20  git status
+   21  git add .
+   22  git status
+   23  git branch
+   24  git checkout BR_Q2
+   25  git status
+   26  git add .
+   27  git status
+   28  git commit -m "move flower files and zip"
+   29  git checkout master
+   30  git merge BR_Q2
+   31  git push origin master
+   32  git push origin BR_Q2
+   33  history > history.log
+   34  git log > git_commit_part2.txt
+   35  git add .
+   36  git commit -m ""
+   37  git commit -m "add history and git_commit part2"
+   38  git checkout master
+   39  git push origin master
+   40  git branch
+   41  git branch BR_Q3
+   42  touch menu.sh
+   43  git checkout -b BR_CSV
+   44  mv menu.sh Work/Q3
+   45  cd Work/Q3
+   46  cd ..
+   47  cd Q2
+   48  cd ..
+   49  cd BACKUPS
+   50  chmod 555 .
+   51  cd ..
+   52  cd Work/Q3
+   53  chmod +x script.sh
+   54  chmod +x menu.sh
+   55  bash menu.sh
+   56  history > historyfile_q3.txt
