@@ -1,0 +1,11 @@
+Sat Mar  8 05:32:18 IST 2025: Using CSV file: /home/saar/LINUX_Course_Project/Work/Q4/csvfile2.csv
+Sat Mar  8 05:32:18 IST 2025: Virtual environment already exists
+Sat Mar  8 05:32:18 IST 2025: Activated virtual environment
+Sat Mar  8 05:32:20 IST 2025: Installed package: matplotlib==3.10.1
+Sat Mar  8 05:32:21 IST 2025: Installed package: numpy==2.2.3
+Sat Mar  8 05:32:21 IST 2025: Finished installing required packages
+Sat Mar  8 05:32:21 IST 2025: Processing plant: Rose
+Sat Mar  8 05:32:23 IST 2025: Processing plant: Tulip
+Sat Mar  8 05:32:24 IST 2025: Processing plant: Sunflower
+Sat Mar  8 05:32:26 IST 2025: Processing plant: Daffodil
+Sat Mar  8 05:32:28 IST 2025: Processing plant: Lily
