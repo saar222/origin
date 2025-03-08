@@ -1,0 +1,31 @@
+    1  history
+    2  git checkout -b BR_Q4
+    3  cd Work
+    4  cd Q4
+    5  touch ex4.sh
+    6  ./ex4.sh /home/saar/LINUX_Course_Project/Work/Q3/csvfile.csv
+    7  chmod +x ex4.sh
+    8  ./ex4.sh /home/saar/LINUX_Course_Project/Work/Q3/csvfile.csv
+    9  cd ..
+   10* chmod +w 
+   11  cd work
+   12  cd /work
+   13  cd Work
+   14* 
+   15  ./ex4.sh /home/saar/LINUX_Course_Project/Work/Q3/csvfile.csv
+   16  ./ex4.sh /home/saar/LINUX_Course_Project/Work/Q3/csvfile2.csv
+   17  ./ex4.sh /home/saar/LINUX_Course_Project/Work/Q4/csvfile2.csv
+   18  mv -vi /Diagrams/*/*.png ../../BACKUPS
+   19  mv Diagrams/*/*.png ../../BACKUPS
+   20  ./ex4.sh /home/saar/LINUX_Course_Project/Work/Q4/csvfile2.csv
+   21  tar -czf ../../BACKUPS/plants_backup_$(date +%Y%m%d_%H%M%S).tar.gz Diagrams
+   22  git add .
+   23  git commit -m "Processed plants and created diagrams and zip and moved to BACKUPS"
+   24  history > command_history.txt
+   25  ./ex42.sh -p path/to/csvfile.csv -o NewDiagrams -b NewBackups -l debug -v new_venv -r new_requirements.txt
+   26  chmod +x ex42.sh
+   27  ./ex42.sh -p csvfile2.csv -o NewDiagrams -b NewBackups -l debug -v new_venv -r new_requirements.txt
+   28  bash -n ./ex42.sh
+   29  /ex42.sh -p csvfile2.csv -o NewDiagrams -b ../../BACKUPS -l info -v ../../myenv -r ../../requirements.txt
+   30  ./ex42.sh -p csvfile2.csv -o NewDiagrams -b ../../BACKUPS -l info -v ../../myenv -r ../../requirements.txt
+   31  history > command_history.txt

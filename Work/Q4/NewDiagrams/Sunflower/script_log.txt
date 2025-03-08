@@ -1,0 +1,8 @@
+Sat Mar  8 06:56:05 IST 2025: Successfully processed Sunflower. Output: Plant: Sunflower
+Height data: [120, 125, 130, 135] cm
+Leaf count data: [50, 55, 60, 65]
+Dry weight data: [5.0, 5.5, 6.0, 6.5] g
+Generated plots for Sunflower:
+Scatter plot saved as Sunflower_scatter.png
+Histogram saved as Sunflower_histogram.png
+Line plot saved as Sunflower_line_plot.png

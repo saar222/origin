@@ -1,0 +1,8 @@
+Sat Mar  8 06:56:04 IST 2025: Successfully processed Tulip. Output: Plant: Tulip
+Height data: [30, 35, 40, 42] cm
+Leaf count data: [12, 15, 18, 20]
+Dry weight data: [1.5, 1.6, 1.7, 1.8] g
+Generated plots for Tulip:
+Scatter plot saved as Tulip_scatter.png
+Histogram saved as Tulip_histogram.png
+Line plot saved as Tulip_line_plot.png
