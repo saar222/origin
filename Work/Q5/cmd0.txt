@@ -1,0 +1,11 @@
+root@DELL:/home/saar# cd /home/saar/LINUX_Course_Project
+root@DELL:/home/saar/LINUX_Course_Project# cd Work
+root@DELL:/home/saar/LINUX_Course_Project/Work# ls
+Q1  Q2  Q3  Q4
+root@DELL:/home/saar/LINUX_Course_Project/Work# mkdir Q5
+root@DELL:/home/saar/LINUX_Course_Project/Work# ls
+Q1  Q2  Q3  Q4  Q5
+root@DELL:/home/saar/LINUX_Course_Project/Work# git checkout -b BR_Q5
+Switched to a new branch 'BR_Q5'
+root@DELL:/home/saar/LINUX_Course_Project/Work# cd ..
+root@DELL:/home/saar/LINUX_Course_Project# cd Work/Q5

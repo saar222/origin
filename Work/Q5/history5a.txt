@@ -1,0 +1,27 @@
+    1  ls
+    2  cd app
+    3  ls
+    4  convert diagram_*.png -reverse -append reversed.png 
+    5  convert *.png -reverse -append reversed.png 
+    6  ls
+    7  cd app
+    8  ls
+    9  convert *.png -reverse -append reversed.png 
+   10  ls
+   11  rm reversed.png
+   12  convert [rtm]*.png -reverse -append reversed.png 
+   13  magick [rtm]*.png -reverse -append reversed.png
+   14  ls -la *.png
+   15  ls -la [rtm]*.png
+   16  ls -la '[rtm]*.png'
+   17  ls -la "[rtm]*.png"
+   18  ls -la *r.png *t.png *m.png
+   19  convert -reverse *r.png *t.png *m.png comb_reverse.png
+   20  rm *0.png *1.png *2.png
+   21  ls -la (*[rtm]).png
+   22  ls R*
+   23  convert R* -reverse -append reversed.png 
+   24  cd ..
+   25  cd app
+   26  histtory > history5a.txt
+   27  history > history5a.txt

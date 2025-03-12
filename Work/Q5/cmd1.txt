@@ -1,0 +1,307 @@
+root@DELL:/home/saar# docker run -it --name q5_container -v $(pwd):/app ubuntu:latest /bin/bash
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+5a7813e071bf: Pull complete 
+Digest: sha256:72297848456d5d37d1262630108ab308d3e9ec7ed1c3286a32fe09856619a782
+Status: Downloaded newer image for ubuntu:latest
+root@8a23c8d389ab:/# aa^C
+root@8a23c8d389ab:/# 
+exit
+root@DELL:/home/saar# 
+root@DELL:/home/saar# cd /home/saar/LINUX_Course_Project/Work/Q5
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# docker run -it --name q5_container -v $(pwd):/app ubuntu:latest /bin/bash
+docker: Error response from daemon: Conflict. The container name "/q5_container" is already in use by container "8a23c8d389ab2c78ea880527da2d6b8528d0a23afa2cb2e444dae1463e8654e1". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# docker attach q5_container
+You cannot attach to a stopped container, start it first
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# 
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# 
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# 
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# 
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# 
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# 
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# docker start q5_container
+q5_container
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# docker exec -it q5_container bash
+root@8a23c8d389ab:/# ls
+app  boot  etc   lib    media  opt   root  sbin  sys  usr
+bin  dev   home  lib64  mnt    proc  run   srv   tmp  var
+root@8a23c8d389ab:/# pwd
+/
+root@8a23c8d389ab:/# cd app
+root@8a23c8d389ab:/app# ls
+ 60_Hw1-1_209401934.zip
+ BashScript
+ BashScript2
+ LINUX_Course_Project
+ Matala_Files
+ TestRepo_1
+ cloneAPP
+ cstats
+ cstats.lex
+ cstats.zip
+ data.log
+ example.l
+ git-askpass
+ historyfile.txt
+ hw_1sml.txt
+'input_file copy.txt'
+ input_file.txt
+ lex.yy.c
+ matala_1
+ matala_2
+ matala_today
+ res.txt
+ snap
+''$'\342\200\217\342\200\217\327\252\327\231\327\247\327\231\327\224'' '$'\327\227\327\223\327\251\327\224'
+root@8a23c8d389ab:/app# 
+exit
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# docker run -it --name Q5_container -v $(pwd):/app ubuntu:latest /bin/bash
+root@c657fb5b2f98:/# ls
+app  bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+root@c657fb5b2f98:/# cd app
+root@c657fb5b2f98:/app# ls
+root@c657fb5b2f98:/app# 
+exit
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# cd ..
+root@DELL:/home/saar/LINUX_Course_Project/Work# cp Q4/plan.py Q5/plant.py
+cp: cannot stat 'Q4/plan.py': No such file or directory
+root@DELL:/home/saar/LINUX_Course_Project/Work# cp Q1/plant.py Q5/plant.py
+cp: cannot stat 'Q1/plant.py': No such file or directory
+root@DELL:/home/saar/LINUX_Course_Project/Work# cp /Q1/plant.py /Q5/plant.py
+cp: cannot stat '/Q1/plant.py': No such file or directory
+root@DELL:/home/saar/LINUX_Course_Project/Work# cp /Q2/plant.py /Q5/plant.py
+cp: cannot stat '/Q2/plant.py': No such file or directory
+root@DELL:/home/saar/LINUX_Course_Project/Work# cp Q2/plant.py /Q5/plant.py
+cp: cannot create regular file '/Q5/plant.py': No such file or directory
+root@DELL:/home/saar/LINUX_Course_Project/Work# cp Q2/plant.py Q5/plant.py
+root@DELL:/home/saar/LINUX_Course_Project/Work# cd Q5
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# LS
+LS: command not found
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# ls
+plant.py
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# docker exec -it Q5_container bash
+Error response from daemon: container c657fb5b2f9851e752084a9b6c2a7ee5e29d601625e9f440fabad15da9c440fc is not running
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# docker start q5_container
+q5_container
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# docker stop q5_container
+q5_container
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# 
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# 
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# 
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# 
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# 
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# docker start Q5_container
+Q5_container
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# docker exec -it Q5_container bash
+root@c657fb5b2f98:/# ls
+app  bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+root@c657fb5b2f98:/# cd app
+root@c657fb5b2f98:/app# ls
+plant.py
+root@c657fb5b2f98:/app# apt update && apt install -y nano python3
+Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [841 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]         
+Get:9 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [34.0 kB]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [909 kB]
+Get:11 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1063 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]         
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1167 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1352 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [38.7 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [962 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [16.0 kB]
+Fetched 28.6 MB in 5s (5318 kB/s)                            
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+18 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  ca-certificates libexpat1 libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib
+  libreadline8t64 libsqlite3-0 libssl3t64 media-types netbase openssl python3-minimal
+  python3.12 python3.12-minimal readline-common tzdata
+Suggested packages:
+  hunspell python3-doc python3-tk python3-venv python3.12-venv python3.12-doc binutils
+  binfmt-support readline-doc
+The following NEW packages will be installed:
+  ca-certificates libexpat1 libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib
+  libreadline8t64 libsqlite3-0 media-types nano netbase openssl python3 python3-minimal
+  python3.12 python3.12-minimal readline-common tzdata
+The following packages will be upgraded:
+  libssl3t64
+1 upgraded, 17 newly installed, 0 to remove and 17 not upgraded.
+Need to get 10.7 MB of archives.
+After this operation, 31.1 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libssl3t64 amd64 3.0.13-0ubuntu3.5 [1940 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-minimal amd64 3.12.3-1ubuntu0.5 [835 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libexpat1 amd64 2.6.1-2ubuntu0.2 [87.4 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12-minimal amd64 3.12.3-1ubuntu0.5 [2342 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-minimal amd64 3.12.3-0ubuntu2 [27.4 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 media-types all 10.1.0 [27.5 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 netbase all 6.4 [13.1 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 tzdata all 2024b-0ubuntu0.24.04.1 [274 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble/main amd64 readline-common all 8.2-4build1 [56.5 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 libreadline8t64 amd64 8.2-4build1 [153 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsqlite3-0 amd64 3.45.1-1ubuntu2.1 [701 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-stdlib amd64 3.12.3-1ubuntu0.5 [2069 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12 amd64 3.12.3-1ubuntu0.5 [651 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3-stdlib amd64 3.12.3-0ubuntu2 [10.0 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3 amd64 3.12.3-0ubuntu2 [23.0 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 openssl amd64 3.0.13-0ubuntu3.5 [1002 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 ca-certificates all 20240203 [159 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 nano amd64 7.2-2ubuntu0.1 [282 kB]
+Fetched 10.7 MB in 2s (6805 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+(Reading database ... 4383 files and directories currently installed.)
+Preparing to unpack .../libssl3t64_3.0.13-0ubuntu3.5_amd64.deb ...
+Unpacking libssl3t64:amd64 (3.0.13-0ubuntu3.5) over (3.0.13-0ubuntu3.4) ...
+Setting up libssl3t64:amd64 (3.0.13-0ubuntu3.5) ...
+Selecting previously unselected package libpython3.12-minimal:amd64.
+(Reading database ... 4383 files and directories currently installed.)
+Preparing to unpack .../libpython3.12-minimal_3.12.3-1ubuntu0.5_amd64.deb ...
+Unpacking libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.5) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.6.1-2ubuntu0.2_amd64.deb ...
+Unpacking libexpat1:amd64 (2.6.1-2ubuntu0.2) ...
+Selecting previously unselected package python3.12-minimal.
+Preparing to unpack .../python3.12-minimal_3.12.3-1ubuntu0.5_amd64.deb ...
+Unpacking python3.12-minimal (3.12.3-1ubuntu0.5) ...
+Setting up libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.5) ...
+Setting up libexpat1:amd64 (2.6.1-2ubuntu0.2) ...
+Setting up python3.12-minimal (3.12.3-1ubuntu0.5) ...
+Selecting previously unselected package python3-minimal.
+(Reading database ... 4702 files and directories currently installed.)
+Preparing to unpack .../0-python3-minimal_3.12.3-0ubuntu2_amd64.deb ...
+Unpacking python3-minimal (3.12.3-0ubuntu2) ...
+Selecting previously unselected package media-types.
+Preparing to unpack .../1-media-types_10.1.0_all.deb ...
+Unpacking media-types (10.1.0) ...
+Selecting previously unselected package netbase.
+Preparing to unpack .../2-netbase_6.4_all.deb ...
+Unpacking netbase (6.4) ...
+Selecting previously unselected package tzdata.
+Progress: [ 36%] [########################............................................] 
+Unpacking tzdata (2024b-0ubuntu0.24.04.1) ...
+Selecting previously unselected package readline-common.
+Preparing to unpack .../4-readline-common_8.2-4build1_all.deb ...
+Unpacking readline-common (8.2-4build1) ...
+Selecting previously unselected package libreadline8t64:amd64.
+Preparing to unpack .../5-libreadline8t64_8.2-4build1_amd64.deb ...
+Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8 to /lib/x86_64-linux-gnu/libhistory.so.8.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8.2 to /lib/x86_64-linux-gnu/libhistory.so.8.2.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8 to /lib/x86_64-linux-gnu/libreadline.so.8.usr-is-merged by libreadline8t64'.........................................] 
+Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8.2 to /lib/x86_64-linux-gnu/libreadline.so.8.2.usr-is-merged by libreadline8t64'
+Unpacking libreadline8t64:amd64 (8.2-4build1) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../6-libsqlite3-0_3.45.1-1ubuntu2.1_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.45.1-1ubuntu2.1) ...
+Selecting previously unselected package libpython3.12-stdlib:amd64.
+Preparing to unpack .../7-libpython3.12-stdlib_3.12.3-1ubuntu0.5_amd64.deb ...
+Unpacking libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.5) ...
+Selecting previously unselected package python3.12.
+Preparing to unpack .../8-python3.12_3.12.3-1ubuntu0.5_amd64.deb ...
+Unpacking python3.12 (3.12.3-1ubuntu0.5) ...
+Selecting previously unselected package libpython3-stdlib:amd64.
+Preparing to unpack .../9-libpython3-stdlib_3.12.3-0ubuntu2_amd64.deb ...
+Unpacking libpython3-stdlib:amd64 (3.12.3-0ubuntu2) ...
+Setting up python3-minimal (3.12.3-0ubuntu2) ...
+Selecting previously unselected package python3.
+(Reading database ... 5707 files and directories currently installed.)
+Preparing to unpack .../python3_3.12.3-0ubuntu2_amd64.deb ...
+Unpacking python3 (3.12.3-0ubuntu2) ...
+Selecting previously unselected package openssl.
+Preparing to unpack .../openssl_3.0.13-0ubuntu3.5_amd64.deb ...
+Unpacking openssl (3.0.13-0ubuntu3.5) ...
+Selecting previously unselected package ca-certificates.
+Preparing to unpack .../ca-certificates_20240203_all.deb ...
+Unpacking ca-certificates (20240203) ...
+Selecting previously unselected package nano.
+Preparing to unpack .../nano_7.2-2ubuntu0.1_amd64.deb ...
+Unpacking nano (7.2-2ubuntu0.1) ...
+Setting up media-types (10.1.0) ...
+Setting up libsqlite3-0:amd64 (3.45.1-1ubuntu2.1) ...
+Setting up tzdata (2024b-0ubuntu0.24.04.1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/x86_64-linux-gnu/perl5/5.38 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+debconf: falling back to frontend: Teletype
+Configuring tzdata
+------------------
+
+Please select the geographic area in which you live. Subsequent configuration questions
+will narrow this down by presenting a list of cities, representing the time zones in
+which they are located.
+
+  1. Africa   3. Antarctica  5. Asia      7. Australia  9. Indian    11. Etc
+  2. America  4. Arctic      6. Atlantic  8. Europe     10. Pacific  12. Legacy
+Geographic area: 5 
+Progress: [ 70%] [###############################################.....................] 
+Please select the city or region corresponding to your time zone......................] 
+Progress: [ 70%] [###############################################.....................] 
+  1. Aden         19. Chongqing    37. Jerusalem     55. Novokuznetsk   73. Tashkent
+  2. Almaty       20. Colombo      38. Kabul         56. Novosibirsk    74. Tbilisi
+  3. Amman        21. Damascus     39. Kamchatka     57. Omsk           75. Tehran
+  4. Anadyr       22. Dhaka        40. Karachi       58. Oral           76. Tel_Aviv
+  5. Aqtau        23. Dili         41. Kashgar       59. Phnom_Penh     77. Thimphu
+  6. Aqtobe       24. Dubai        42. Kathmandu     60. Pontianak      78. Tokyo
+  7. Ashgabat     25. Dushanbe     43. Khandyga      61. Pyongyang      79. Tomsk
+  8. Atyrau       26. Famagusta    44. Kolkata       62. Qatar          80. Ulaanbaatar
+  9. Baghdad      27. Gaza         45. Krasnoyarsk   63. Qostanay       81. Urumqi
+  10. Bahrain     28. Harbin       46. Kuala_Lumpur  64. Qyzylorda      82. Ust-Nera
+  11. Baku        29. Hebron       47. Kuching       65. Riyadh         83. Vientiane
+  12. Bangkok     30. Ho_Chi_Minh  48. Kuwait        66. Sakhalin       84. Vladivostok
+  13. Barnaul     31. Hong_Kong    49. Macau         67. Samarkand      85. Yakutsk
+  14. Beirut      32. Hovd         50. Magadan       68. Seoul          86. Yangon
+  15. Bishkek     33. Irkutsk      51. Makassar      69. Shanghai       87. Yekaterinburg
+  16. Brunei      34. Istanbul     52. Manila        70. Singapore      88. Yerevan
+  17. Chita       35. Jakarta      53. Muscat        71. Srednekolymsk
+  18. Choibalsan  36. Jayapura     54. Nicosia       72. Taipei
+Time zone: 76  
+
+
+Current default time zone: 'Asia/Tel_Aviv'
+Local time is now:      Wed Mar 12 20:34:37 IST 2025.
+Universal Time is now:  Wed Mar 12 18:34:37 UTC 2025.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+Setting up nano (7.2-2ubuntu0.1) ...
+update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/editor.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group editor) doesn't exist
+update-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/pico.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group pico) doesn't exist
+Setting up netbase (6.4) ...
+Setting up openssl (3.0.13-0ubuntu3.5) ...
+Setting up readline-common (8.2-4build1) ...
+Setting up ca-certificates (20240203) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/x86_64-linux-gnu/perl5/5.38 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+146 added, 0 removed; done.
+Setting up libreadline8t64:amd64 (8.2-4build1) ...
+Setting up libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.5) ...
+Setting up python3.12 (3.12.3-1ubuntu0.5) ...
+Setting up libpython3-stdlib:amd64 (3.12.3-0ubuntu2) ...
+Setting up python3 (3.12.3-0ubuntu2) ...
+running python rtupdate hooks for python3.12...
+running python post-rtupdate hooks for python3.12...
+Processing triggers for libc-bin (2.39-0ubuntu8.3) ...
+Processing triggers for ca-certificates (20240203) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
