@@ -1,20 +1,11 @@
 #!/bin/bash
 
-# Default values
-CSV_FILE=""
-OUTPUT_DIR="Diagrams"
-BACKUP_DIR="../../BACKUPS"
-LOG_LEVEL="info"
-VENV_DIR="../../myenv"
-REQUIREMENTS_FILE="../../requirements.txt"
-
 # Function to log messages
 log_message() {
     if [[ "$LOG_LEVEL" == "info" || "$LOG_LEVEL" == "debug" ]]; then
         echo "$(date): $1" >> script_log.txt
     fi
 }
-
 
 # Function to log errors
 log_error() {
@@ -41,11 +32,11 @@ parse_arguments() {
                 LOG_LEVEL="$2"
                 shift 2
                 ;;
-            -v|--venv-name)
+            -v|--venv-dir)
                 VENV_DIR="$2"
                 shift 2
                 ;;
-            -r|--requirements)
+            -r|--requirements-file)
                 REQUIREMENTS_FILE="$2"
                 shift 2
                 ;;
@@ -60,9 +51,10 @@ parse_arguments() {
 # Parse arguments
 parse_arguments "$@"
 
-# Check if CSV file is provided
-if [ -z "$CSV_FILE" ]; then
-    log_error "CSV file path is required. Use -p or --path to specify."
+# Check if all required arguments are provided
+if [ -z "$CSV_FILE" ] || [ -z "$OUTPUT_DIR" ] || [ -z "$BACKUP_DIR" ] || [ -z "$LOG_LEVEL" ] || [ -z "$VENV_DIR" ] || [ -z "$REQUIREMENTS_FILE" ]; then
+    log_error "All arguments must be provided. Use -h for help."
+    echo "Usage: $0 -p <csv_file> -o <output_dir> -b <backup_dir> -l <log_level> -v <venv_name> -r <requirements_file>"
     exit 1
 fi
 

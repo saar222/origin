@@ -21,3 +21,95 @@ Sat Mar  8 06:56:07 IST 2025: Processing plant: Lily
 Sat Mar  8 06:56:10 IST 2025: Created backup in ../../BACKUPS
 Sat Mar  8 06:56:10 IST 2025: Deactivated virtual environment
 Sat Mar  8 06:56:10 IST 2025: Script completed successfully
+Wed Mar 12 00:48:47 IST 2025: Using CSV file: /home/saar/LINUX_Course_Project/Work/Q4/csvfile2.csv
+Wed Mar 12 00:48:47 IST 2025: Virtual environment already exists
+Wed Mar 12 00:48:47 IST 2025: Activated virtual environment
+Wed Mar 12 00:48:49 IST 2025: Installed package: matplotlib==3.10.1
+Wed Mar 12 00:48:49 IST 2025: Installed package: numpy==2.2.3
+Wed Mar 12 00:48:49 IST 2025: Finished installing required packages
+Wed Mar 12 00:48:49 IST 2025: Processing plant: Rose
+Wed Mar 12 00:48:52 IST 2025: Processing plant: Tulip
+Wed Mar 12 00:48:53 IST 2025: Processing plant: Sunflower
+Wed Mar 12 00:48:54 IST 2025: Processing plant: Daffodil
+Wed Mar 12 00:48:56 IST 2025: Processing plant: Lily
+Wed Mar 12 00:50:27 IST 2025: Using CSV file: /home/saar/LINUX_Course_Project/Work/Q4/csvfile2.csv
+Wed Mar 12 00:50:27 IST 2025: Virtual environment already exists
+Wed Mar 12 00:50:27 IST 2025: Activated virtual environment
+Wed Mar 12 00:50:28 IST 2025: Installed package: matplotlib==3.10.1
+Wed Mar 12 00:50:29 IST 2025: Installed package: numpy==2.2.3
+Wed Mar 12 00:50:29 IST 2025: Finished installing required packages
+Wed Mar 12 00:50:29 IST 2025: Processing plant: Rose
+Wed Mar 12 00:50:30 IST 2025: Processing plant: Tulip
+Wed Mar 12 00:50:32 IST 2025: Processing plant: Sunflower
+Wed Mar 12 00:50:33 IST 2025: Processing plant: Daffodil
+Wed Mar 12 00:50:35 IST 2025: Processing plant: Lily
+Wed Mar 12 00:51:37 IST 2025: Using CSV file: /home/saar/LINUX_Course_Project/Work/Q4/csvfile2.csv
+Wed Mar 12 00:51:37 IST 2025: Virtual environment already exists
+Wed Mar 12 00:51:37 IST 2025: Activated virtual environment
+Wed Mar 12 00:51:38 IST 2025: Installed package: matplotlib==3.10.1
+Wed Mar 12 00:51:39 IST 2025: Installed package: numpy==2.2.3
+Wed Mar 12 00:51:39 IST 2025: Finished installing required packages
+Wed Mar 12 00:51:39 IST 2025: Processing plant: Rose
+Wed Mar 12 00:51:40 IST 2025: Processing plant: Tulip
+Wed Mar 12 00:51:42 IST 2025: Processing plant: Sunflower
+Wed Mar 12 00:51:41 IST 2025: Processing plant: Daffodil
+Wed Mar 12 00:51:42 IST 2025: Processing plant: Lily
+Wed Mar 12 00:54:45 IST 2025: Using CSV file: path/to/csvfile.csv
+Wed Mar 12 00:54:57 IST 2025: Created new virtual environment: new_venv
+Wed Mar 12 00:54:57 IST 2025: Activated virtual environment
+Wed Mar 12 01:05:25 IST 2025: Using CSV file: path/to/csvfile.csv
+Wed Mar 12 01:05:25 IST 2025: Virtual environment already exists: new_venv
+Wed Mar 12 01:05:25 IST 2025: Activated virtual environment
+Wed Mar 12 01:08:17 IST 2025: Using CSV file: path/to/csvfile.csv
+Wed Mar 12 01:08:17 IST 2025: Virtual environment already exists: new_venv
+Wed Mar 12 01:08:18 IST 2025: Activated virtual environment
+Wed Mar 12 01:14:26 IST 2025: Using CSV file: csvfile2.csv
+Wed Mar 12 01:14:26 IST 2025: Virtual environment already exists: ../../myenv
+Wed Mar 12 01:14:26 IST 2025: Activated virtual environment
+Wed Mar 12 01:14:28 IST 2025: Installed required packages from ../../requirements.txt
+Wed Mar 12 01:14:28 IST 2025: Processing plant: Rose
+Wed Mar 12 01:14:32 IST 2025: Processing plant: Tulip
+Wed Mar 12 01:14:33 IST 2025: Processing plant: Sunflower
+Wed Mar 12 01:14:34 IST 2025: Processing plant: Daffodil
+Wed Mar 12 01:14:36 IST 2025: Processing plant: Lily
+Wed Mar 12 01:14:37 IST 2025: Created backup in ../../BACKUPS
+Wed Mar 12 01:14:37 IST 2025: Deactivated virtual environment
+Wed Mar 12 01:14:37 IST 2025: Script completed successfully
+Fri Mar 14 04:38:42 IST 2025: Using CSV file: csvfile2.csv
+Fri Mar 14 04:38:42 IST 2025: Virtual environment already exists: ../../myenv
+Fri Mar 14 04:38:42 IST 2025: Activated virtual environment
+Fri Mar 14 04:38:44 IST 2025: Installed required packages from ../../requirements.txt
+Fri Mar 14 04:38:44 IST 2025: Processing plant: Rose
+Fri Mar 14 04:38:46 IST 2025: Processing plant: Tulip
+Fri Mar 14 04:38:47 IST 2025: Processing plant: Sunflower
+Fri Mar 14 04:38:49 IST 2025: Processing plant: Daffodil
+Fri Mar 14 04:38:50 IST 2025: Processing plant: Lily
+Fri Mar 14 04:38:52 IST 2025: Created backup in ../../BACKUPS
+Fri Mar 14 04:38:52 IST 2025: Deactivated virtual environment
+Fri Mar 14 04:38:52 IST 2025: Script completed successfully
+Fri Mar 14 05:00:16 IST 2025: Using CSV file: csvfile2.csv
+Fri Mar 14 05:00:16 IST 2025: Virtual environment already exists: ../../myenv
+Fri Mar 14 05:00:16 IST 2025: Activated virtual environment
+Fri Mar 14 05:00:17 IST 2025: Installed required packages from ../../requirements.txt
+Fri Mar 14 05:00:17 IST 2025: Processing plant: Rose
+Fri Mar 14 05:00:19 IST 2025: Processing plant: Tulip
+Fri Mar 14 05:00:20 IST 2025: Processing plant: Sunflower
+Fri Mar 14 05:00:21 IST 2025: Processing plant: Daffodil
+Fri Mar 14 05:00:22 IST 2025: Processing plant: Lily
+Fri Mar 14 05:00:24 IST 2025: Created backup in ../../BACKUPS
+Fri Mar 14 05:00:24 IST 2025: Deactivated virtual environment
+Fri Mar 14 05:00:24 IST 2025: Script completed successfully
+Fri Mar 14 05:16:18 IST 2025: Using CSV file: csvfile2.csv
+Fri Mar 14 05:16:18 IST 2025: Virtual environment already exists: .
+Fri Mar 14 05:21:56 IST 2025: Using CSV file: csvfile2.csv
+Fri Mar 14 05:21:56 IST 2025: Virtual environment already exists: new_venv
+Fri Mar 14 05:21:56 IST 2025: Activated virtual environment
+Fri Mar 14 05:22:10 IST 2025: Installed required packages from ../../requirements.txt
+Fri Mar 14 05:22:10 IST 2025: Processing plant: Rose
+Fri Mar 14 05:22:12 IST 2025: Processing plant: Tulip
+Fri Mar 14 05:22:13 IST 2025: Processing plant: Sunflower
+Fri Mar 14 05:22:15 IST 2025: Processing plant: Daffodil
+Fri Mar 14 05:22:17 IST 2025: Processing plant: Lily
+Fri Mar 14 05:22:18 IST 2025: Created backup in ../../BACKUPS
+Fri Mar 14 05:22:18 IST 2025: Deactivated virtual environment
+Fri Mar 14 05:22:18 IST 2025: Script completed successfully
