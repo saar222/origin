@@ -1,0 +1,253 @@
+    1  history
+    2  git checkout -b BR_Q2
+    3  cp DOWNLOADS/LINUX_COURSE_WORK-downloads/plant.py Work/Q2/
+    4  cd Work/Q2
+    5  python.py
+    6  python3 plant.py
+    7  mkdir Diagrams_1
+    8  mv *.png Q2/Diagrams_1/
+    9  mv *.png Diagrams_1/
+   10  cd ..
+   11  tar -czvf BACKUPS/diagrams_$(date +"%Y%m%d_%H%M%S").tar.gz Work/Q2/Diagrams_1/*
+   12  git add .
+   13  git status
+   14  git commit -m "move .png and zip .png"
+   15  git checkout master
+   16  git merge BR_Q2
+   17  git push origin master
+   18  git push origin BR_Q2
+   19  history
+   20  git log
+   21  git log > logEX_2.txt
+   22  cd LINUX_Course_Project/Work/Q2/Diagrams_1
+   23  python Q2/Diagrams_1/plant_plots.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40
+   24  45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0
+   25  python3 Q2/Diagrams_1/plant_plots.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40
+   26  45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0
+   27  python Q2/plant_plots.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40
+   28  45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0
+   29  python3 Q2/plant_plots.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40
+   30  45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0
+   31  python3 Work/Q2/plant_plots.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40
+   32  45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0
+   33  cd LINUX_Course_Project/Work/Q2/plant_plot.py
+   34  cd Work/Q2/plant_plot.py
+   35  cd /Work/Q2/plant_plot.py
+   36  cd Work
+   37  cd Q2
+   38  python plant_plots.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40
+   39  45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0
+   40  python3 plant_plots.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40
+   41  python3 plant_plots.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40
+   42  45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0
+   43  ls -l plant_plots.py
+   44  python3 plant_plots.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40
+   45  45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0
+   46  chmod +x plant_plots.py
+   47  ls -l plant_plots.py
+   48  python3 plant_plots.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40
+   49  45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0
+   50  "python3 plant_plots.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0"
+   51  python3 'plant_plots.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0'
+   52  python3 plant_plots.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0
+   53  pip install pipreqs
+   54  apt pip install pipreqs
+   55  cd ..
+   56  pipreqs .
+   57  pip install pipreqs
+   58  sudo apt install python3-pipreqs
+   59  sudo apt install pipx
+   60  pipx ensurepath
+   61  pipx install pipreqs
+   62  pipreqs .
+   63  git add .
+   64  git status
+   65  git commit -m "move and zip flower diagrams*"
+   66  git reset HEAD~
+   67  asdasdasdasdעכgit log > git_commit_part2.txt
+   68  git log > git_commit_part2.txt
+   69  lkmklmgfdgsdgit log > git_commit_part2.txt
+   70  git log > git_commit_part2.txt
+   71  history
+   72  git checkout -b BR_Q4
+   73  cd Work
+   74  cd Q4
+   75  touch ex4.sh
+   76  ./ex4.sh /home/saar/LINUX_Course_Project/Work/Q3/csvfile.csv
+   77  chmod +x ex4.sh
+   78  ./ex4.sh /home/saar/LINUX_Course_Project/Work/Q3/csvfile.csv
+   79  cd ..
+   80  chmod +w 
+   81  cd work
+   82  cd /work
+   83  cd Work
+   84  ./ex4.sh /home/saar/LINUX_Course_Project/Work/Q3/csvfile.csv
+   85  ./ex4.sh /home/saar/LINUX_Course_Project/Work/Q3/csvfile2.csv
+   86  ./ex4.sh /home/saar/LINUX_Course_Project/Work/Q4/csvfile2.csv
+   87  mv -vi /Diagrams/*/*.png ../../BACKUPS
+   88  mv Diagrams/*/*.png ../../BACKUPS
+   89  ./ex4.sh /home/saar/LINUX_Course_Project/Work/Q4/csvfile2.csv
+   90  tar -czf ../../BACKUPS/plants_backup_$(date +%Y%m%d_%H%M%S).tar.gz Diagrams
+   91  git add .
+   92  git commit -m "Processed plants and created diagrams and zip and moved to BACKUPS"
+   93  history > command_history.txt
+   94  ./ex42.sh -p path/to/csvfile.csv -o NewDiagrams -b NewBackups -l debug -v new_venv -r new_requirements.txt
+   95  chmod +x ex42.sh
+   96  ./ex42.sh -p csvfile2.csv -o NewDiagrams -b NewBackups -l debug -v new_venv -r new_requirements.txt
+   97  bash -n ./ex42.sh
+   98  /ex42.sh -p csvfile2.csv -o NewDiagrams -b ../../BACKUPS -l info -v ../../myenv -r ../../requirements.txt
+   99  ./ex42.sh -p csvfile2.csv -o NewDiagrams -b ../../BACKUPS -l info -v ../../myenv -r ../../requirements.txt
+  100  history > command_history.txt
+  101  git add .
+  102  git commit -m "update bash script ex42.sh output NewDiagrams"
+  103  git checkout master
+  104  git merge BR_Q4
+  105  git push origin master
+  106  git push origin BR_Q4
+  107  cd LINUX_Course_Project
+  108  pipreqs .
+  109  pip uninstall -y -r requirements.txt 
+  110  sudo pip uninstall -y -r requirements.txt 
+  111  python3 -m venv myenv
+  112  source myenv/bin/activate
+  113  pip uninstall -y -r requirements.txt
+  114  pip install -r requirements.txt
+  115  deactivate
+  116  python3 plant_plots.py --plant "flower" --height 50 55 60 70 80 --leaf_count 30 40 50 60 70 --dry_weight 3.0 3.2 3.5 3.7 4.0
+  117  cd Work
+  118  cd 
+  119  cd /home/saar/LINUX_Course_Project/Work
+  120  cd Q2
+  121  python3 plant_plots.py --plant "flower" --height 50 55 60 70 80 --leaf_count 30 40 50 60 70 --dry_weight 3.0 3.2 3.5 3.7 4.0
+  122  mkdir Diagrams_2
+  123  mv flower* Diagrams_2/
+  124  cd ..
+  125  tar -czvf BACKUPS/diagrams_2_$(date +"%Y%m%d_%H%M%S").tar.gz Work/Q2/Diagrams_2/*
+  126  git status
+  127  git add .
+  128  git status
+  129  git branch
+  130  git checkout BR_Q2
+  131  git status
+  132  git add .
+  133  git status
+  134  git commit -m "move flower files and zip"
+  135  git checkout master
+  136  git merge BR_Q2
+  137  git push origin master
+  138  git push origin BR_Q2
+  139  history > history.log
+  140  git log > git_commit_part2.txt
+  141  git add .
+  142  git commit -m ""
+  143  git commit -m "add history and git_commit part2"
+  144  git checkout master
+  145  git push origin master
+  146  git branch
+  147  git branch BR_Q3
+  148  touch menu.sh
+  149  git checkout -b BR_CSV
+  150  mv menu.sh Work/Q3
+  151  cd Work/Q3
+  152  cd ..
+  153  cd Q2
+  154  cd ..
+  155  cd BACKUPS
+  156  chmod 555 .
+  157  cd ..
+  158  cd Work/Q3
+  159  chmod +x script.sh
+  160  chmod +x menu.sh
+  161  bash menu.sh
+  162  history > historyfile_q3.txt
+  163  cd ..
+  164  git add .
+  165  git commit -m "add bash script menu.sh "
+  166  git checkout master
+  167  git merge BR_CSV
+  168  git push origin master
+  169  git push origin BR_CSV
+  170  bash menu.sh
+  171  cd Work
+  172  cd Q3
+  173  bash menu.sh
+  174  history
+  175  script -a ~/terminal_session.log  
+  176  cd /home/saar/LINUX_Course_Project
+  177  cd /home/saar/LINUX_Course_Project/Work/Q4
+  178  ./ex4.sh /home/saar/LINUX_Course_Project/Work/Q4/csvfile2.csv
+  179  clear
+  180  ./ex4.sh /home/saar/LINUX_Course_Project/Work/Q4/csvfile2.csv
+  181  ./ex42.sh -p path/to/csvfile.csv -o NewDiagrams -b NewBackups -l debug -v new_venv -r new_requirements.txt
+  182  cd ..
+  183  ./ex42.sh -p path/to/csvfile.csv -o NewDiagrams -b NewBackups -l debug -v new_venv -r new_requirements.txt
+  184  /Q4/ex42.sh -p path/to/csvfile.csv -o NewDiagrams -b NewBackups -l debug -v new_venv -r new_requirements.txt
+  185  ./ex42.sh -p path/to/csvfile.csv -o NewDiagrams -b NewBackups -l debug -v new_venv -r ../../new_requirements.txt
+  186  cat ~/terminal_session.log
+  187  docker run -it --name q5_container -v $(pwd):/app ubuntu:latest /bin/bash
+  188  cd /home/saar/LINUX_Course_Project/Work/Q5
+  189  docker run -it --name q5_container -v $(pwd):/app ubuntu:latest /bin/bash
+  190  docker attach q5_container
+  191  docker start q5_container
+  192  docker exec -it q5_container bash
+  193  docker run -it --name Q5_container -v $(pwd):/app ubuntu:latest /bin/bash
+  194  cd ..
+  195  cp Q4/plan.py Q5/plant.py
+  196  cp Q1/plant.py Q5/plant.py
+  197  cp /Q1/plant.py /Q5/plant.py
+  198  cp /Q2/plant.py /Q5/plant.py
+  199  cp Q2/plant.py /Q5/plant.py
+  200  cp Q2/plant.py Q5/plant.py
+  201  cd Q5
+  202  LS
+  203  ls
+  204  docker start q5_container
+  205  docker stop q5_container
+  206  docker start Q5_container
+  207  docker exec -it Q5_container bash
+  208  docker start -ai my_container
+  209  docker start -ai Q5_container
+  210  git status
+  211  git add .
+  212  git commit -m "BR_Q5a"
+  213  git checkout master
+  214  git merge BR_Q5
+  215  git push origin master
+  216  git push origin BR_Q5
+  217  cd /home/saar/LINUX_Course_Project
+  218  cd Work
+  219  ls
+  220  mkdir Q5
+  221  ls
+  222  git checkout -b BR_Q5
+  223  cd ..
+  224  cd Work/Q5
+  225  docker run -it --name q5_container -v $(pwd):/app ubuntu:latest /bin/bash
+  226  wsl --set-default-version 2
+  227  cd /home/saar/LINUX_Course_Project/Work/Q5
+  228  echo 'FROM python:3.8
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+CMD ["python", "plant_plots.py"]' > Dockerfile
+  229  echo -e "matplotlib==3.10.1\nnumpy==2.2.3" > requirements.txt
+  230  docker build -t plant-plots-app .
+  231  docker --version
+  232  docker build -t plant-plots-app .
+  233  echo -e "matplotlib==3.5.3\nnumpy==1.21.0" > requirements.txt
+  234  cat requirements.txt
+  235  docker build -t plant-plots-app .
+  236  docker run -it plant-plots-app --plant "Sunflower" --height "10 20 30" --leaf_count "5 10 15" --dry_weight "0.5 1.0 1.5"
+  237  echo 'FROM python:3.8
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+ENTRYPOINT ["python", "plant_plots.py"]' > Dockerfile
+  238  docker build -t plant-plots-app .
+  239  docker run -it plant-plots-app --plant "Sunflower" --height "10 20 30" --leaf_count "5 10 15" --dry_weight "0.5 1.0 1.5"
+  240  cp ../Q2/plant_plots.py .
+  241  docker run -it plant-plots-app --plant "Sunflower" --height "10 20 30" --leaf_count "5 10 15" --dry_weight "0.5 1.0 1.5"
+  242  docker build -t plant-plots-app .
+  243  docker run -it plant-plots-app --plant "Sunflower" --height "10 20 30" --leaf_count "5 10 15" --dry_weight "0.5 1.0 1.5"
+  244  docker run -it -v $(pwd):/app plant-plots-app --plant "Sunflower" --height "10 20 30" --leaf_count "5 10 15" --dry_weight "0.5 1.0 1.5"
+  245  history > history5b.txt

@@ -1,0 +1,60 @@
+     myenv/lib/python3.12/site-packages/pip/_vendor/urllib3/util/__pycache__/url.cpython-312.pyc
+M       myenv/lib/python3.12/site-packages/pip/_vendor/urllib3/util/__pycache__/wait.cpython-312.pyc
+M       myenv/lib/python3.12/site-packages/pyparsing/__pycache__/__init__.cpython-312.pyc
+M       myenv/lib/python3.12/site-packages/pyparsing/__pycache__/actions.cpython-312.pyc
+M       myenv/lib/python3.12/site-packages/pyparsing/__pycache__/common.cpython-312.pyc
+M       myenv/lib/python3.12/site-packages/pyparsing/__pycache__/core.cpython-312.pyc
+M       myenv/lib/python3.12/site-packages/pyparsing/__pycache__/exceptions.cpython-312.pyc
+M       myenv/lib/python3.12/site-packages/pyparsing/__pycache__/helpers.cpython-312.pyc
+M       myenv/lib/python3.12/site-packages/pyparsing/__pycache__/results.cpython-312.pyc
+M       myenv/lib/python3.12/site-packages/pyparsing/__pycache__/testing.cpython-312.pyc
+M       myenv/lib/python3.12/site-packages/pyparsing/__pycache__/unicode.cpython-312.pyc
+M       myenv/lib/python3.12/site-packages/pyparsing/__pycache__/util.cpython-312.pyc
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# git merge BR_Q5
+Updating 29d88a4..a159e09
+Fast-forward
+ Work/Q5/Rose_histogram.png | Bin 0 -> 22061 bytes
+ Work/Q5/Rose_line_plot.png | Bin 0 -> 31455 bytes
+ Work/Q5/Rose_scatter.png   | Bin 0 -> 23606 bytes
+ Work/Q5/cmd0.txt           |  11 +
+ Work/Q5/cmd1.txt           | 307 +++++++++++++++
+ Work/Q5/cmd2.txt           | 990 ++++++++++++++++++++++++++++++++++++++++++++++++
+ Work/Q5/cmd3.txt           | 525 +++++++++++++++++++++++++
+ Work/Q5/combined.png       | Bin 0 -> 76821 bytes
+ Work/Q5/history5a.txt      |  27 ++
+ Work/Q5/historyfile_q5.txt |  17 +
+ Work/Q5/plant.py           |  50 +++
+ Work/Q5/reversed.png       | Bin 0 -> 76714 bytes
+ 12 files changed, 1927 insertions(+)
+ create mode 100644 Work/Q5/Rose_histogram.png
+ create mode 100644 Work/Q5/Rose_line_plot.png
+ create mode 100644 Work/Q5/Rose_scatter.png
+ create mode 100644 Work/Q5/cmd0.txt
+ create mode 100644 Work/Q5/cmd1.txt
+ create mode 100644 Work/Q5/cmd2.txt
+ create mode 100644 Work/Q5/cmd3.txt
+ create mode 100644 Work/Q5/combined.png
+ create mode 100644 Work/Q5/history5a.txt
+ create mode 100644 Work/Q5/historyfile_q5.txt
+ create mode 100644 Work/Q5/plant.py
+ create mode 100644 Work/Q5/reversed.png
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# git push origin master
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (16/16), 196.71 KiB | 10.93 MiB/s, done.
+Total 16 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/saar222/origin.git
+   29d88a4..a159e09  master -> master
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q5# git push origin BR_Q5
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'BR_Q5' on GitHub by visiting:
+remote:      https://github.com/saar222/origin/pull/new/BR_Q5
+remote: 
+To https://github.com/saar222/origin.git
+ * [new branch]      BR_Q5 -> BR_Q5
