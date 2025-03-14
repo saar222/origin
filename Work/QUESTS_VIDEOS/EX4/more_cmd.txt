@@ -1,0 +1,182 @@
+root@DELL:/home/saar/LINUX_Course_Project/Work/Q4# source new_venv/bin/activate
+(new_venv) root@DELL:/home/saar/LINUX_Course_Project/Work/Q4# ./ex42.sh -p csvfile2.csv -o NewDiagrams -b ../../BACKUPS -l info -v ../../myenv -r ../../requirements.txt
+Requirement already satisfied: matplotlib==3.10.1 in /home/saar/LINUX_Course_Project/myenv/lib/python3.12/site-packages (from -r ../../requirements.txt (line 1)) (3.10.1)
+Requirement already satisfied: numpy==2.2.3 in /home/saar/LINUX_Course_Project/myenv/lib/python3.12/site-packages (from -r ../../requirements.txt (line 2)) (2.2.3)
+Requirement already satisfied: contourpy>=1.0.1 in /home/saar/LINUX_Course_Project/myenv/lib/python3.12/site-packages (from matplotlib==3.10.1->-r ../../requirements.txt (line 1)) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in /home/saar/LINUX_Course_Project/myenv/lib/python3.12/site-packages (from matplotlib==3.10.1->-r ../../requirements.txt (line 1)) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /home/saar/LINUX_Course_Project/myenv/lib/python3.12/site-packages (from matplotlib==3.10.1->-r ../../requirements.txt (line 1)) (4.56.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /home/saar/LINUX_Course_Project/myenv/lib/python3.12/site-packages (from matplotlib==3.10.1->-r ../../requirements.txt (line 1)) (1.4.8)
+Requirement already satisfied: packaging>=20.0 in /home/saar/LINUX_Course_Project/myenv/lib/python3.12/site-packages (from matplotlib==3.10.1->-r ../../requirements.txt (line 1)) (24.2)
+Requirement already satisfied: pillow>=8 in /home/saar/LINUX_Course_Project/myenv/lib/python3.12/site-packages (from matplotlib==3.10.1->-r ../../requirements.txt (line 1)) (11.1.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /home/saar/LINUX_Course_Project/myenv/lib/python3.12/site-packages (from matplotlib==3.10.1->-r ../../requirements.txt (line 1)) (3.2.1)
+Requirement already satisfied: python-dateutil>=2.7 in /home/saar/LINUX_Course_Project/myenv/lib/python3.12/site-packages (from matplotlib==3.10.1->-r ../../requirements.txt (line 1)) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in /home/saar/LINUX_Course_Project/myenv/lib/python3.12/site-packages (from python-dateutil>=2.7->matplotlib==3.10.1->-r ../../requirements.txt (line 1)) (1.17.0)
+(new_venv) root@DELL:/home/saar/LINUX_Course_Project/Work/Q4# ls -la csvfile2.csv
+-rw-r--r-- 1 root root 304 Mar  8 07:01 csvfile2.csv
+(new_venv) root@DELL:/home/saar/LINUX_Course_Project/Work/Q4# ls -la NewDiagrams/
+total 28
+drwxr-xr-x 7 root root 4096 Mar  8 07:01 .
+drwxr-xr-x 5 root root 4096 Mar 12 00:54 ..
+drwxr-xr-x 2 root root 4096 Mar  8 07:01 Daffodil
+drwxr-xr-x 2 root root 4096 Mar  8 07:01 Lily
+drwxr-xr-x 2 root root 4096 Mar  8 07:01 Rose
+drwxr-xr-x 2 root root 4096 Mar  8 07:01 Sunflower
+drwxr-xr-x 2 root root 4096 Mar  8 07:01 Tulip
+(new_venv) root@DELL:/home/saar/LINUX_Course_Project/Work/Q4# ls -la csvfile2.csv
+cat csvfile2.csv
+-rw-r--r-- 1 root root 304 Mar  8 07:01 csvfile2.csv
+Plant,Height,Leaf Count,Dry Weight
+Rose,"50 55 60 65 70","35 40 45 50 55","2.0 2.2 2.5 2.7 3.0"
+Tulip,"30 35 40 42","12 15 18 20","1.5 1.6 1.7 1.8"
+Sunflower,"120 125 130 135","50 55 60 65","5.0 5.5 6.0 6.5"
+Daffodil,"40 45 50 55","15 18 20 22","1.8 2.0 2.2 2.5"
+Lily,"60 65 70","20 22 24","2.5 2.7 3.0"
+(new_venv) root@DELL:/home/saar/LINUX_Course_Project/Work/Q4# 
+(new_venv) root@DELL:/home/saar/LINUX_Course_Project/Work/Q4# 
+(new_venv) root@DELL:/home/saar/LINUX_Course_Project/Work/Q4# 
+(new_venv) root@DELL:/home/saar/LINUX_Course_Project/Work/Q4# ls -la csvfile2.csv
+-rw-r--r-- 1 root root 304 Mar  8 07:01 csvfile2.csv
+(new_venv) root@DELL:/home/saar/LINUX_Course_Project/Work/Q4# cat script_log.txt
+cat error_log.txt
+Sat Mar  8 05:32:18 IST 2025: Using CSV file: /home/saar/LINUX_Course_Project/Work/Q4/csvfile2.csv
+Sat Mar  8 05:32:18 IST 2025: Virtual environment already exists
+Sat Mar  8 05:32:18 IST 2025: Activated virtual environment
+Sat Mar  8 05:32:20 IST 2025: Installed package: matplotlib==3.10.1
+Sat Mar  8 05:32:21 IST 2025: Installed package: numpy==2.2.3
+Sat Mar  8 05:32:21 IST 2025: Finished installing required packages
+Sat Mar  8 05:32:21 IST 2025: Processing plant: Rose
+Sat Mar  8 05:32:23 IST 2025: Processing plant: Tulip
+Sat Mar  8 05:32:24 IST 2025: Processing plant: Sunflower
+Sat Mar  8 05:32:26 IST 2025: Processing plant: Daffodil
+Sat Mar  8 05:32:28 IST 2025: Processing plant: Lily
+Sat Mar  8 06:55:56 IST 2025: Using CSV file: csvfile2.csv
+Sat Mar  8 06:55:56 IST 2025: Virtual environment already exists: ../../myenv
+Sat Mar  8 06:55:56 IST 2025: Activated virtual environment
+Sat Mar  8 06:55:59 IST 2025: Installed required packages from ../../requirements.txt
+Sat Mar  8 06:55:59 IST 2025: Processing plant: Rose
+Sat Mar  8 06:56:02 IST 2025: Processing plant: Tulip
+Sat Mar  8 06:56:04 IST 2025: Processing plant: Sunflower
+Sat Mar  8 06:56:05 IST 2025: Processing plant: Daffodil
+Sat Mar  8 06:56:07 IST 2025: Processing plant: Lily
+Sat Mar  8 06:56:10 IST 2025: Created backup in ../../BACKUPS
+Sat Mar  8 06:56:10 IST 2025: Deactivated virtual environment
+Sat Mar  8 06:56:10 IST 2025: Script completed successfully
+Wed Mar 12 00:48:47 IST 2025: Using CSV file: /home/saar/LINUX_Course_Project/Work/Q4/csvfile2.csv
+Wed Mar 12 00:48:47 IST 2025: Virtual environment already exists
+Wed Mar 12 00:48:47 IST 2025: Activated virtual environment
+Wed Mar 12 00:48:49 IST 2025: Installed package: matplotlib==3.10.1
+Wed Mar 12 00:48:49 IST 2025: Installed package: numpy==2.2.3
+Wed Mar 12 00:48:49 IST 2025: Finished installing required packages
+Wed Mar 12 00:48:49 IST 2025: Processing plant: Rose
+Wed Mar 12 00:48:52 IST 2025: Processing plant: Tulip
+Wed Mar 12 00:48:53 IST 2025: Processing plant: Sunflower
+Wed Mar 12 00:48:54 IST 2025: Processing plant: Daffodil
+Wed Mar 12 00:48:56 IST 2025: Processing plant: Lily
+Wed Mar 12 00:50:27 IST 2025: Using CSV file: /home/saar/LINUX_Course_Project/Work/Q4/csvfile2.csv
+Wed Mar 12 00:50:27 IST 2025: Virtual environment already exists
+Wed Mar 12 00:50:27 IST 2025: Activated virtual environment
+Wed Mar 12 00:50:28 IST 2025: Installed package: matplotlib==3.10.1
+Wed Mar 12 00:50:29 IST 2025: Installed package: numpy==2.2.3
+Wed Mar 12 00:50:29 IST 2025: Finished installing required packages
+Wed Mar 12 00:50:29 IST 2025: Processing plant: Rose
+Wed Mar 12 00:50:30 IST 2025: Processing plant: Tulip
+Wed Mar 12 00:50:32 IST 2025: Processing plant: Sunflower
+Wed Mar 12 00:50:33 IST 2025: Processing plant: Daffodil
+Wed Mar 12 00:50:35 IST 2025: Processing plant: Lily
+Wed Mar 12 00:51:37 IST 2025: Using CSV file: /home/saar/LINUX_Course_Project/Work/Q4/csvfile2.csv
+Wed Mar 12 00:51:37 IST 2025: Virtual environment already exists
+Wed Mar 12 00:51:37 IST 2025: Activated virtual environment
+Wed Mar 12 00:51:38 IST 2025: Installed package: matplotlib==3.10.1
+Wed Mar 12 00:51:39 IST 2025: Installed package: numpy==2.2.3
+Wed Mar 12 00:51:39 IST 2025: Finished installing required packages
+Wed Mar 12 00:51:39 IST 2025: Processing plant: Rose
+Wed Mar 12 00:51:40 IST 2025: Processing plant: Tulip
+Wed Mar 12 00:51:42 IST 2025: Processing plant: Sunflower
+Wed Mar 12 00:51:41 IST 2025: Processing plant: Daffodil
+Wed Mar 12 00:51:42 IST 2025: Processing plant: Lily
+Wed Mar 12 00:54:45 IST 2025: Using CSV file: path/to/csvfile.csv
+Wed Mar 12 00:54:57 IST 2025: Created new virtual environment: new_venv
+Wed Mar 12 00:54:57 IST 2025: Activated virtual environment
+Wed Mar 12 01:05:25 IST 2025: Using CSV file: path/to/csvfile.csv
+Wed Mar 12 01:05:25 IST 2025: Virtual environment already exists: new_venv
+Wed Mar 12 01:05:25 IST 2025: Activated virtual environment
+Wed Mar 12 01:08:17 IST 2025: Using CSV file: path/to/csvfile.csv
+Wed Mar 12 01:08:17 IST 2025: Virtual environment already exists: new_venv
+Wed Mar 12 01:08:18 IST 2025: Activated virtual environment
+Wed Mar 12 01:14:26 IST 2025: Using CSV file: csvfile2.csv
+Wed Mar 12 01:14:26 IST 2025: Virtual environment already exists: ../../myenv
+Wed Mar 12 01:14:26 IST 2025: Activated virtual environment
+Wed Mar 12 01:14:28 IST 2025: Installed required packages from ../../requirements.txt
+Wed Mar 12 01:14:28 IST 2025: Processing plant: Rose
+Wed Mar 12 01:14:32 IST 2025: Processing plant: Tulip
+Wed Mar 12 01:14:33 IST 2025: Processing plant: Sunflower
+Wed Mar 12 01:14:34 IST 2025: Processing plant: Daffodil
+Wed Mar 12 01:14:36 IST 2025: Processing plant: Lily
+Wed Mar 12 01:14:37 IST 2025: Created backup in ../../BACKUPS
+Wed Mar 12 01:14:37 IST 2025: Deactivated virtual environment
+Wed Mar 12 01:14:37 IST 2025: Script completed successfully
+Fri Mar 14 04:38:42 IST 2025: Using CSV file: csvfile2.csv
+Fri Mar 14 04:38:42 IST 2025: Virtual environment already exists: ../../myenv
+Fri Mar 14 04:38:42 IST 2025: Activated virtual environment
+Fri Mar 14 04:38:44 IST 2025: Installed required packages from ../../requirements.txt
+Fri Mar 14 04:38:44 IST 2025: Processing plant: Rose
+Fri Mar 14 04:38:46 IST 2025: Processing plant: Tulip
+Fri Mar 14 04:38:47 IST 2025: Processing plant: Sunflower
+Fri Mar 14 04:38:49 IST 2025: Processing plant: Daffodil
+Fri Mar 14 04:38:50 IST 2025: Processing plant: Lily
+Fri Mar 14 04:38:52 IST 2025: Created backup in ../../BACKUPS
+Fri Mar 14 04:38:52 IST 2025: Deactivated virtual environment
+Fri Mar 14 04:38:52 IST 2025: Script completed successfully
+Fri Mar 14 05:00:16 IST 2025: Using CSV file: csvfile2.csv
+Fri Mar 14 05:00:16 IST 2025: Virtual environment already exists: ../../myenv
+Fri Mar 14 05:00:16 IST 2025: Activated virtual environment
+Fri Mar 14 05:00:17 IST 2025: Installed required packages from ../../requirements.txt
+Fri Mar 14 05:00:17 IST 2025: Processing plant: Rose
+Fri Mar 14 05:00:19 IST 2025: Processing plant: Tulip
+Fri Mar 14 05:00:20 IST 2025: Processing plant: Sunflower
+Fri Mar 14 05:00:21 IST 2025: Processing plant: Daffodil
+Fri Mar 14 05:00:22 IST 2025: Processing plant: Lily
+Fri Mar 14 05:00:24 IST 2025: Created backup in ../../BACKUPS
+Fri Mar 14 05:00:24 IST 2025: Deactivated virtual environment
+Fri Mar 14 05:00:24 IST 2025: Script completed successfully
+Wed Mar 12 00:54:57 IST 2025: ERROR - Requirements file not found: new_requirements.txt
+Wed Mar 12 01:05:25 IST 2025: ERROR - Requirements file not found: new_requirements.txt
+Wed Mar 12 01:08:18 IST 2025: ERROR - Requirements file not found: ../../new_requirements.txt
+(new_venv) root@DELL:/home/saar/LINUX_Course_Project/Work/Q4# ./ex42.sh -p csvfile2.csv -o NewDiagrams -b ../../BACKUPS -l info -v . -r ../../requirements.txt
+./ex42.sh: line 77: ./bin/activate: No such file or directory
+(new_venv) root@DELL:/home/saar/LINUX_Course_Project/Work/Q4# ./ex42.sh -p csvfile2.csv -o NewDiagrams -b ../../BACKUPS -l info -v new_venv -r ../../requirements.txt
+Collecting matplotlib==3.10.1 (from -r ../../requirements.txt (line 1))
+  Using cached matplotlib-3.10.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+Collecting numpy==2.2.3 (from -r ../../requirements.txt (line 2))
+  Using cached numpy-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+Collecting contourpy>=1.0.1 (from matplotlib==3.10.1->-r ../../requirements.txt (line 1))
+  Using cached contourpy-1.3.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.4 kB)
+Collecting cycler>=0.10 (from matplotlib==3.10.1->-r ../../requirements.txt (line 1))
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib==3.10.1->-r ../../requirements.txt (line 1))
+  Using cached fonttools-4.56.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (101 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib==3.10.1->-r ../../requirements.txt (line 1))
+  Using cached kiwisolver-1.4.8-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.2 kB)
+Collecting packaging>=20.0 (from matplotlib==3.10.1->-r ../../requirements.txt (line 1))
+  Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting pillow>=8 (from matplotlib==3.10.1->-r ../../requirements.txt (line 1))
+  Using cached pillow-11.1.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting pyparsing>=2.3.1 (from matplotlib==3.10.1->-r ../../requirements.txt (line 1))
+  Using cached pyparsing-3.2.1-py3-none-any.whl.metadata (5.0 kB)
+Collecting python-dateutil>=2.7 (from matplotlib==3.10.1->-r ../../requirements.txt (line 1))
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib==3.10.1->-r ../../requirements.txt (line 1))
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Using cached matplotlib-3.10.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (8.6 MB)
+Using cached numpy-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.1 MB)
+Using cached contourpy-1.3.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (323 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached fonttools-4.56.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.9 MB)
+Using cached kiwisolver-1.4.8-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.5 MB)
+Using cached packaging-24.2-py3-none-any.whl (65 kB)
+Using cached pillow-11.1.0-cp312-cp312-manylinux_2_28_x86_64.whl (4.5 MB)
+Using cached pyparsing-3.2.1-py3-none-any.whl (107 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, pyparsing, pillow, packaging, numpy, kiwisolver, fonttools, cycler, python-dateutil, contourpy, matplotlib
+Successfully installed contourpy-1.3.1 cycler-0.12.1 fonttools-4.56.0 kiwisolver-1.4.8 matplotlib-3.10.1 numpy-2.2.3 packaging-24.2 pillow-11.1.0 pyparsing-3.2.1 python-dateutil-2.9.0.post0 six-1.17.0
